@@ -32,3 +32,4 @@
 <br>
 
 ## ❄️ ‎ Information
+  - <b>Frameworks</b> : React Native, Nextjs
