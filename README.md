@@ -32,4 +32,8 @@
 <br>
 
 ## ❄️ ‎ Information
-  - <b>Frameworks</b> : React Native, Nextjs
+  - <b>Frameworks</b> : React Native, Nextjs.<br />
+  - <b>Languages</b>: TypeScript, Scss.<br />
+  - <b>Technologies</b>: Prisma.<br />
+
+<br />
