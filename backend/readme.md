@@ -48,9 +48,9 @@ Configuring project :
   POST /users
 ```
 
-| Json      | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `{name, email, password}` | `json` | For register user in database |
+| Parameter      | Type    
+| :-------- | :------- 
+| `{name, email, password}` | `json` |
 
 #### Login User
 
@@ -58,22 +58,82 @@ Configuring project :
   POST /session
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `{email, password}` | `json` | For login user in database |
+| Parameter | Type    
+| :-------- | :------- 
+| `{email, password}` | `json` 
 
 
 #### Details of User
 
 ```http
-  POST /session
+  GET /session
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `token` | `bearer` | Details of User in database |
+| Parameter | Type     
+| :-------- | :-------
+| `token` | `bearer` 
 
 #### Category :
+
+#### Create Category
+
+```http
+  POST /category
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+| `{name}` | `json` 
+
+
+#### List Category
+
+```http
+  GET /category
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+
+#### Product :
+
+#### Register Product
+
+```http
+  POST /product
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+| `{name, price, description, file, category_id}` | `multipart` |
+
+#### List Product
+
+```http
+  GET /category/product
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+
+
+#### Order :
+
+#### Create Order
+
+```http
+  POST /order
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+|`{table, name}`|`json`|
+
 
 
 ## Features
@@ -90,4 +150,9 @@ Configuring project :
 - List Order
 - List Order Details
 - Finish Order
+
+
+## Documentation
+
+[Documentation](https://linktodocumentation)
 
