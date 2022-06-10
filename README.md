@@ -7,9 +7,6 @@
         <a href="/">
           <img alt="GitHub Repo stars" align="left"  src="https://img.shields.io/github/stars/freezywt/Pizzaria?color=%23162026&label=Stars&logoColor=%23162026&style=for-the-badge">
           </a>
-  
-  ---
-  
           <a href="#">
                 <img alt="GitHub watchers" align="right"  src="https://img.shields.io/github/watchers/freezywt/Pizzaria?color=%23162026&label=Visitors&logoColor=%23162026&style=for-the-badge">
             </a>
