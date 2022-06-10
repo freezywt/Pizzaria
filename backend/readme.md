@@ -219,8 +219,3 @@ Configuring project :
 - List Order Details
 - Finish Order
 
-
-## Documentation
-
-[Documentation](https://linktodocumentation)
-
