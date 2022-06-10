@@ -134,6 +134,74 @@ Configuring project :
 | `token` | `bearer` 
 |`{table, name}`|`json`|
 
+#### Delete Order
+
+```http
+  DELETE /order
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+|`order_id`|`query`|
+
+#### Send Order
+
+```http
+  PUT /order/send
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+|`order_id`|`json`|
+
+#### Add item to Order
+
+```http
+  POST /order/add
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+|`{order_id, product_id, amount}`|`json`|
+
+#### Remove item to Order
+
+```http
+  DELETE /order/remove
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+|`item_id`|`query`|
+
+#### Finish Order
+
+```http
+  PUT /order/finish
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+|`order_id`|`query`|
+
+#### List Order
+
+```http
+  get /orders
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+
+
+
+
 
 
 ## Features
