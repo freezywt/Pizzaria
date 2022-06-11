@@ -38,6 +38,21 @@ Configuring project :
         change line 8 to your postgresql url
 
 ```
+## Features
+
+- List Users
+- Register User
+- Login User
+- List Categories
+- Add Categories
+- Create Product
+- List Product per category
+- Create Order
+- Delete Order
+- List Order
+- List Order Details
+- Finish Order
+
 ## API Reference
 
 #### Users :
@@ -203,19 +218,4 @@ Configuring project :
 
 
 
-
-## Features
-
-- List Users
-- Register User
-- Login User
-- List Categories
-- Add Categories
-- Create Product
-- List Product per category
-- Create Order
-- Delete Order
-- List Order
-- List Order Details
-- Finish Order
 
