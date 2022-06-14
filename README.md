@@ -37,3 +37,6 @@
   - <b>Technologies</b>: Prisma.<br />
 
 <br />
+
+## 🎨 Figma
+<a href="https://www.figma.com/file/NvUGXZtqZgJJD1hQthb3Oz/ProjetoPizzaria">Project</a>
