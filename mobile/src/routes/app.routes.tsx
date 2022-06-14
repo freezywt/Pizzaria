@@ -19,28 +19,28 @@ export type StackParamsList = {
 
 const Stack: any = createNativeStackNavigator<StackParamsList>()
 
-export default function AppRoutes(){
-    return(
+export default function AppRoutes() {
+    return (
         <Stack.Navigator>
-            <Stack.Screen 
-                name="Dashboard" 
-                component={Dashboard} 
-                options={{ headerShown: false}}
+            <Stack.Screen
+                name="Dashboard"
+                component={Dashboard}
+                options={{ headerShown: false }}
             />
-            <Stack.Screen 
-                name="Order" 
-                component={Order} 
-                options={{ headerShown: false}}
+            <Stack.Screen
+                name="Order"
+                component={Order}
+                options={{ headerShown: false }}
             />
-            <Stack.Screen 
-                name="FinishOrder" 
-                component={FinishOrder} 
-                options={{ 
-                    title: 'Finalizando', 
-                    headerStyle: { 
-                        backgroundColor: '#1d1d2e' ,
+            <Stack.Screen
+                name="FinishOrder"
+                component={FinishOrder}
+                options={{
+                    title: 'Finalizando',
+                    headerStyle: {
+                        backgroundColor: '#fff',
                     },
-                    headerTintColor: '#fff',
+                    headerTintColor: '#3C3A3B',
                 }}
             />
         </Stack.Navigator>
