@@ -49,15 +49,15 @@ export default function Dashboard() {
             <TextInput
                 placeholder='Número da mesa'
                 placeholderTextColor='#8E8E8E'
-                keyboardType='numeric'
-                value={number}
-                onChangeText={setNumber}
-                style={styles.input}
-            />
+                keyboardpe='numeric'
+                                        value={number}
+                                        onChangeText={setNumber}
+                                        style={styles.input}
+                                    />
 
-            <TouchableOpacity style={styles.button} onPress={openOrder}>
-                {loading ? (
-                    <ActivityIndicator size={25} color='#1d1d2e' />
+                                    <TouchableOpacity style={styles.button} onPress={openOrder}>
+                                        {loading ? (
+                                            <ActivityIndicator size={25} color='#1d1d2e'Ty />
                 ) : (
                     <Text style={styles.buttonText}>Abrir mesa</Text>
                 )}
