@@ -18,30 +18,30 @@ type RouteDetailParams = {
 
 type FinishOrderRouteProp = RouteProp<RouteDetailParams, 'FinishOrder'>
 
-export default function FinishOrder(){
+export default function FinishOrder() {
     const route = useRoute<FinishOrderRouteProp>()
     const navigation = useNavigation<NativeStackNavigationProp<StackParamsList>>()
 
-    async function handleFinish(){
-        try{
+    async function handleFinish() {
+        try {
             await api.put('/order/send', {
                 order_id: route.params?.order_id
             })
 
             navigation.popToTop()
-        }catch(err){
+        } catch (err) {
             console.log('erro ao finalizar')
         }
     }
 
-    return(
+    return (
         <View style={styles.container}>
             <Text style={styles.alert}>Você deseja finalizar esse pedido?</Text>
             <Text style={styles.title}>Mesa {route.params?.number}</Text>
 
             <TouchableOpacity style={styles.button} onPress={handleFinish}>
                 <Text style={styles.textButton}>Finalizar pedido</Text>
-                <Feather name='shopping-cart' size={20} color='#1d1d2e' />
+                <Feather name='shopping-cart' size={20} color='#3C3A3B' />
             </TouchableOpacity>
         </View>
     )
@@ -50,7 +50,7 @@ export default function FinishOrder(){
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#1d1d2e',
+        backgroundColor: '#fff',
         paddingVertical: '5%',
         paddingHorizontal: '4%',
         alignItems: 'center',
@@ -58,18 +58,18 @@ const styles = StyleSheet.create({
     },
     alert: {
         fontSize: 20,
-        color: '#fff',
+        color: '#3C3A3B',
         fontWeight: 'bold',
         marginBottom: 12,
     },
     title: {
         fontSize: 30,
         fontWeight: 'bold',
-        color: '#fff',
+        color: '#3C3A3B',
         marginBottom: 12,
     },
     button: {
-        backgroundColor: '#3fffa3',
+        backgroundColor: '#FFC448',
         flexDirection: 'row',
         width: '65%',
         height: 40,
@@ -81,6 +81,6 @@ const styles = StyleSheet.create({
         fontSize: 18,
         marginRight: 8,
         fontWeight: 'bold',
-        color: '#1d1d2e',
+        color: '#fff',
     }
 })
