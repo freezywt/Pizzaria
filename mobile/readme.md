@@ -6,12 +6,20 @@
 <br />
 <br />
 
-## ⚡ ‎ Commands
+## ⚡ ‎ Setupping
 
 install dependencies :
 
 ```
   expo install
+```
+
+Change /src/service/api.ts
+
+```
+const api = axios.create({
+    baseURL: '' <= input your api
+})
 ```
 
 run project :
