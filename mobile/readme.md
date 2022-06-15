@@ -14,7 +14,7 @@ install dependencies :
   expo install
 ```
 
-Change /src/service/api.ts
+Change /src/service/api.ts :
 
 ```
 const api = axios.create({
