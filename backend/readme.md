@@ -148,7 +148,7 @@ Configuring project :
 #### List Exact Product
 
 ```http
-  GET //product/exact
+  GET /product/exact
 ```
 
 | Parameter | Type     
