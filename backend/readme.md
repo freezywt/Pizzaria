@@ -135,6 +135,28 @@ Configuring project :
 | :-------- | :------- 
 | `token` | `bearer` 
 
+#### List All Products
+
+```http
+  GET /product/all
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+
+#### List Exact Product
+
+```http
+  GET //product/exact
+```
+
+| Parameter | Type     
+| :-------- | :------- 
+| `token` | `bearer` 
+| `item_id` | `query`
+
+
 
 #### Order :
 

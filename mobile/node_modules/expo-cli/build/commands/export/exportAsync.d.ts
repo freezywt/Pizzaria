@@ -1,0 +1,22 @@
+import type { ProjectTarget } from '@expo/config';
+declare type Options = {
+    outputDir: string;
+    assetUrl: string;
+    publicUrl?: string;
+    mergeSrcUrl: string[];
+    mergeSrcDir: string[];
+    dev: boolean;
+    clear: boolean;
+    quiet: boolean;
+    platform: string;
+    target?: ProjectTarget;
+    dumpAssetmap: boolean;
+    dumpSourcemap: boolean;
+    maxWorkers?: number;
+    experimentalBundle: boolean;
+};
+export declare function promptPublicUrlAsync(): Promise<string>;
+export declare function ensurePublicUrlAsync(url: any, isDev?: boolean): Promise<string>;
+export declare function collectMergeSourceUrlsAsync(projectRoot: string, mergeSrcUrl: string[]): Promise<string[]>;
+export declare function actionAsync(projectRoot: string, options: Options): Promise<void>;
+export {};

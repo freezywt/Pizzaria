@@ -1,0 +1,18 @@
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-left: 30px;
+    transition: all 300ms ease-in-out;
+}
+
+.productsList {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 3.0rem;
+    counter-reset: grid-counter;
+}
+
+.productImg {
+    object-fit: cover;
+    border-radius: 10px;
+}

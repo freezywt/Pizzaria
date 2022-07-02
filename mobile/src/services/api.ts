@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: '' //put your api url
+  baseURL: 'https://sheltered-shore-48117.herokuapp.com/' //put your api url
 })
 
 export { api }

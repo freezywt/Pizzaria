@@ -11,8 +11,8 @@ app.use(cors())
 
 app.use(router)
 app.use(
-    '/files',
-    express.static(path.resolve(__dirname, '..', 'tmp'))
+    '/images',
+    express.static(path.resolve(__dirname, '..', 'images'))
 )
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {

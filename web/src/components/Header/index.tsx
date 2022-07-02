@@ -6,10 +6,10 @@ import { FiLogOut } from 'react-icons/fi'
 
 import { AuthContext } from '../../contexts/AuthContext'
 
-export function Header(){
+export function Header() {
     const { signOut } = useContext(AuthContext)
 
-    return(
+    return (
         <header className={styles.headerContainer}>
             <div className={styles.headerContent}>
                 <Link href="/dashboard">
@@ -20,12 +20,15 @@ export function Header(){
                     <Link href='/category'>
                         <a>Categoria</a>
                     </Link>
-                    <Link href='/product'>
+                    <Link href='/products'>
+                        <a>Produtos</a>
+                    </Link>
+                    <Link href='/newproduct'>
                         <a>Cardapio</a>
                     </Link>
 
                     <button onClick={signOut}>
-                        <FiLogOut color="#fff" size={24} />
+                        <FiLogOut color="#3C3A3B" size={24} />
                     </button>
                 </nav>
             </div>

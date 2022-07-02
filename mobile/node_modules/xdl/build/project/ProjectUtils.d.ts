@@ -1,0 +1,21 @@
+import { Log, LogStream } from '../internal';
+export declare type LogTag = 'expo' | 'metro' | 'device';
+export declare type LogFields = {
+    tag: LogTag;
+    issueId?: string;
+    issueCleared?: boolean;
+    includesStack?: boolean;
+    deviceId?: string;
+    deviceName?: string;
+    groupDepth?: number;
+    shouldHide?: boolean;
+    _expoEventType?: 'TUNNEL_READY';
+};
+export declare function getLogger(projectRoot: string): Log;
+export declare function logWithLevel(projectRoot: string, level: string, fields: LogFields, msg: string, id?: string): void;
+export declare function logDebug(projectRoot: string, tag: LogTag, message: string, id?: string): void;
+export declare function logInfo(projectRoot: string, tag: LogTag, message: string, id?: string): void;
+export declare function logError(projectRoot: string, tag: LogTag, message: string, id?: string): void;
+export declare function logWarning(projectRoot: string, tag: LogTag, message: string, id?: string): void;
+export declare function clearNotification(projectRoot: string, id: string): void;
+export declare function attachLoggerStream(projectRoot: string, stream: LogStream): void;
